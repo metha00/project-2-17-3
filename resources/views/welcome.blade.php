@@ -57,7 +57,7 @@
           <li><a href="#chefs">Chefs</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="{{route('login')}}">Login</a></li>
+          <li><a href="{{route('login')}}" target="_blank">Login</a></li>
 
 
           <!--<li><a href="{{route('register')}}">Register</a></li>
@@ -245,7 +245,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
               <h4>Drink</h4>
-            </a><!-- End tab nav item -->
+            </a>
 
           <!--<li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
@@ -285,6 +285,106 @@
 
               @endforeach
 
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <!-- Start Drinks Menu Content -->
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <h3>Drink</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-1.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-1.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Drinking Water</h4>
+                <p class="ingredients">
+                    Vol. 500 ml.
+                </p>
+                <p class="price">
+                    ฿13
+                </p>
+              </div><!-- Menu Item1 -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-2.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-2.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Pepsi</h4>
+                <p class="ingredients">
+                    Vol. 640 ml.
+                </p>
+                <p class="price">
+                    ฿20
+                </p>
+              </div><!-- Menu Item2 -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-3.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-3.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Sprite lemon</h4>
+                <p class="ingredients">
+                    Vol. 450 ml.
+                </p>
+                <p class="price">
+                    ฿15
+                </p>
+              </div><!-- Menu Item3 -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-4.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-4.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Leo Beer</h4>
+                <p class="ingredients">
+                    Vol. 620 ml.
+                </p>
+                <p class="price">
+                    ฿70
+                </p>
+              </div><!-- Menu Item4 -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-5.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-5.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Chang Beer</h4>
+                <p class="ingredients">
+                    Vol. 640 ml.
+                </p>
+                <p class="price">
+                    ฿70
+                </p>
+              </div><!-- Menu Item5 -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-6.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-6.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Singha Beer</h4>
+                <p class="ingredients">
+                    Vol. 620 ml.
+                </p>
+                <p class="price">
+                    ฿90
+                </p>
+              </div><!-- Menu Item6 -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-7.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-7.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Heineken</h4>
+                <p class="ingredients">
+                    Beer Vol. 620 ml.
+                </p>
+                <p class="price">
+                    ฿90
+                </p>
+              </div><!-- Menu Item7 -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="{{asset('frontend/assets/img/menu/menuD-8.png')}}" class="glightbox"><img src="{{asset('frontend/assets/img/menu/menuD-8.png')}}" class="menu-img img-fluid" alt=""></a>
+                <h4>Regency Brandy</h4>
+                <p class="ingredients">
+                    Vol. 500 ml./ 700 ml.
+                </p>
+                <p class="price">
+                    ฿600/850
+                </p>
+              </div><!-- Menu Item8 -->
 
             </div>
           </div><!-- End Drink Menu Content -->
@@ -949,30 +1049,29 @@
     </div>
 
     <div class="container">
-      <div class="copyright">
-          <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  <!--&copy; <a class="border-bottom" href="#">This WebSite</a>, All Right Reserved. <br>!-->
-                  <p class=" text-muted">©This WebSite, All Right Reserved.</p>
-                  <p class=" text-muted">© Bootstrap V.5.0.2</p>
-                  <p class=" text-muted">Information Technology @PSC</p>
-                  <div class="container">
-                      <p class=" text-muted">Designed By <a class="border-bottom"
-                              href="https://www.facebook.com/EmzMetha" target="_blank">Emz</a></p>
-                  </div>
-              </div>
-              <div class="col-md-6 text-center text-md-end">
-                <div class="footer-menu">
-                    <h4><a href="{{route('register')}} ">Register</a></h4>
-                </div>
-                <div class="footer-menu">
-                    <h4><a href="{{route('login')}}">Login</a></h4>
-                </div>
-              </div>
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <!--&copy; <a class="border-bottom" href="#">This WebSite</a>, All Right Reserved. <br>!-->
 
-          </div>
-      </div>
-  </div>
+                    <div class="container">
+                        <p class=" text-muted">© Bootstrap V.5.0.2</p>
+                        <p class=" text-muted">Information Technology <a href="https://www3.pongsawadi.ac.th/psc2023/" target="_blank"class="footer-link fw-bolder">@PSC</a></p>
+                        <p class=" text-muted">Designed By <a class="border-bottom" href="https://www.facebook.com/EmzMetha" target="_blank">@Emz</a></p>
+                    </div>
+                </div>
+                {{-- <div class="col-md-6 text-center text-md-end">
+                  <div class="footer-menu">
+                      <h4><a href="{{route('register')}} ">Register</a></h4>
+                  </div>
+                  <div class="footer-menu">
+                      <h4><a href="{{route('login')}}">Login</a></h4>
+                  </div>
+                </div> --}}
+
+            </div>
+        </div>
+    </div>
 
   </footer>
   <!-- End Footer -->

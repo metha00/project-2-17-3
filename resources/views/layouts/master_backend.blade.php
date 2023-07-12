@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Admin IT-Shop</title>
+    <title>Admin</title>
 
     <meta name="description" content="" />
 
@@ -59,7 +59,7 @@
                         <img src="{{ asset('backend/assets/img/logoicon.png')}}" alt="">
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">
-                            IT Shop
+                            JaiSungMa
                         </span>
                     </a>
 
@@ -80,7 +80,7 @@
                         </a>
                     </li>
 
-                    <li class="menu-item">
+                    <li class="menu-item active">
                         <a href="{{ route('pro.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-cart-alt"></i>
                             <div data-i18n="Analytics">Product</div>
@@ -106,7 +106,7 @@
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
 
-                        Admin IT-Shop
+                        <h2>Product</h2>
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
 
@@ -131,7 +131,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">John Doe</span>
+                                                    <span class="fw-semibold d-block">Admin</span>
                                                     <small class="text-muted">Admin</small>
                                                 </div>
                                             </div>
@@ -173,23 +173,36 @@
                     @yield('content')
 
                 </div>
-                    <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div
-                            class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script>
-                                , made with ❤️ by
-                                <a href="https://pongsawadi.ac.th/psc2019/" target="_blank"
-                                    class="footer-link fw-bolder">สาขาเทคโนโลยีสารสนเทศ วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์</a>
-                            </div>
+                    <!-- Footer --><hr>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <!--&copy; <a class="border-bottom" href="#">This WebSite</a>, All Right Reserved. <br>!-->
+                        <div class="container">
+                        <p class=" text-muted">Information Technology <a href="https://www3.pongsawadi.ac.th/psc2023/" target="_blank"
+                            class="footer-link fw-bolder">@PSC</a></p>
 
+                            <p class=" text-muted">Designed By <a class="border-bottom"
+                                    href="https://www.facebook.com/EmzMetha" target="_blank">@Emz</a></p>
                         </div>
-                    </footer>
-                    <!-- / Footer -->
+                    </div>
+                    {{-- <div class="col-md-6 text-center text-md-end">
+                      <div class="footer-menu">
+                          <h4><a href="{{route('register')}} ">Register</a></h4>
+                      </div>
+                      <div class="footer-menu">
+                          <h4><a href="{{route('login')}}">Login</a></h4>
+                      </div>
+                    </div> --}}
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / Footer -->
+
                     <div class="content-backdrop fade"></div>
                 </div>
                 <!-- Content wrapper -->

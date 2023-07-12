@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V15</title>
+	<title>Sign In</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="{{ asset('admin/images/icons/favicon.ico') }}"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/vendor/bootstrap/css/bootstrap.min.css')}}>
@@ -14,13 +14,13 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/vendor/animate/animate.css')}}">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/vendor/css-hamburgers/hamburgers.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/vendor/animsition/css/animsition.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/vendor/select2/select2.min.css')}}">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/vendor/daterangepicker/daterangepicker.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/css/util.css')}}">
@@ -28,7 +28,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -65,7 +65,36 @@
 			</div>
 		</div>
 	</div>
-	
+
+<!-- Footer --><hr>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <!--&copy; <a class="border-bottom" href="#">This WebSite</a>, All Right Reserved. <br>!-->
+                    <div class="container">
+                        <p class=" text-muted">Information Technology <a href="https://www3.pongsawadi.ac.th/psc2023/" target="_blank"
+                        class="footer-link fw-bolder">@PSC</a></p>
+                        <p class=" text-muted">Designed By <a class="border-bottom"
+                                href="https://www.facebook.com/EmzMetha" target="_blank">@Emz</a></p>
+                    </div>
+                </div>
+                {{-- <div class="col-md-6 text-center text-md-end">
+                  <div class="footer-menu">
+                      <h4><a href="{{route('register')}} ">Register</a></h4>
+                  </div>
+                  <div class="footer-menu">
+                      <h4><a href="{{route('login')}}">Login</a></h4>
+                  </div>
+                </div> --}}
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- / Footer -->
+
 <!--===============================================================================================-->
 	<script src="{{ asset('admin/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
 <!--===============================================================================================-->
