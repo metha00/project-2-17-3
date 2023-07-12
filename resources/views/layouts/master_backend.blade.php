@@ -59,7 +59,7 @@
                         <img src="{{ asset('backend/assets/img/logoicon.png')}}" alt="">
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">
-                            JaiSungMa
+                        aiSungMa
                         </span>
                     </a>
 
